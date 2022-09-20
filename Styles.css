@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+img{
+    height: 20rem;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 40rem;
+}
+
+.card-bio{
+    background-color: #151515;
+    font-weight: 900;
+    padding: 3rem 3rem 8rem 3rem;
+    display: flex;
+    border-radius: 0.5rem 0.5rem 0 0;
+    position: relative;
+    z-index: 100;
+}
+
+.img-wrapper{
+    width: 13rem;
+    height:13rem;
+    margin-right: 3rem;
+}
+
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.person-info{
+    width: 60%;
+    color: #fff;
+}
+
+.person-info h5{
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.person-info p{
+    font-size: 1.8rem;
+}
+
+.card-btn{
+    position: absolute;
+    bottom: -2.5rem;
+    right: 10rem;
+    width: 20rem;
+    height: 6rem;
+    background-color: #ec1819;
+    color: white;
+    border-radius: 5rem;
+    border: none;
+    font-family: serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    box-shadow: 0.03rem 0.02rem rgba(0, 0, 0, 0.3);
+    outline: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.change .card-btn{
+    width: 6rem;
+    right: 3rem;
+    bottom: -3rem;
+    border-radius: 50%;
+}
+
+.card-btn-contact{
+    transition: all .5s .1s;
+}
+.card-btn-contact,
+.card-btn .card-btn-contact i{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.change .card-btn-contact{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .1s;
+}
+.card-btn i{
+    opacity: 0;
+    visibility: hidden;
+}
+.change .card-btn i{
+    opacity: 1;
+    visibility: visible;
+}
+    
+.card-contact{
+    background-color: #2d814d;
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    transform: translateY(-100%);
+    transition: all .5s;
+}
+
+.change .card-contact{
+    transform: translateY(0);
+}
+
+.card-contact h4{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
+    transform: scale(0);
+    transform-origin: left;
+    transition: all .5s;
+}
+
+.change .card-contact h4{
+    transform: scale(1);
+}
+
+.card-social{
+    background-color: #151515;
+    color: white;
+    font-weight: 400;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.change .card-social{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.email{
+    transition: all .5s .3s;
+}
+
+.fb{
+    transition: all .5s .5s;
+}
+
+.linkedIn{
+    transition: all .5s .7s;
+}
+.icon-wrapper{
+    width: 4rem;
+    height: 4rem;  
+    font-size: 2rem;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.email .icon-wrapper{
+    background-color: #ee4b39;
+}
+
+.fb .icon-wrapper{
+    background-color: #5b5998;
+}
+
+.linkedIn .icon-wrapper{
+    background-color: #007bb6 ;
+}
+
+.icon-wrapper i{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.contact-details h4{
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem ;
+    font-weight: 900;
+}
+
+.email h4{
+    color: #dd4b39;
+}
+
+.fb h4{
+    color: #3b5998;
+}
+
+.linkedIn h4{
+    color: #007bb6;
+}
+
+.contact-details p{
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    font-weight: 900;
+}
+
+.card-social span{
+    margin-left: auto;
+    font-size: 2rem;
+    font-weight: bold;
+   color: white;
+   width: 3rem;
+   height: 3rem;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card-social span.email:hover{
+    background-color: #ee4b39;
+    transition: all .2s;
+}
+
+.card-social span.fb:hover{
+    background-color: #5b5998;
+    transition: all .2s;
+}
+
+.card-social span.linkedIn:hover{
+    background-color: #007bb6;
+    transition: all .2s;
+}
